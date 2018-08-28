@@ -1,9 +1,16 @@
+---
 swagger: "2.0"
 x-collection-name: Mattermost
-x-complete: 1
+x-complete: 0
 info:
-  title: Mattermost
-  version: 1.0.0
+  title: Mattermost API Revoke all active sessions for a user
+  description: |-
+    Revokes all user sessions from the provided user id and session id strings.
+    ##### Permissions
+    Must be logged in as the user being updated or have the `edit_other_users` permission.
+    __Minimum server version__: 4.4
+  termsOfService: https://about.mattermost.com/default-terms/
+  version: 4.0.0
 host: your-mattermost-url.com
 basePath: /api/v4
 schemes:
@@ -60,28 +67,17 @@ paths:
       - Active
       - Sessionsa
       - User
-  /users/tokens/revoke:
-    post:
-      summary: Revoke a user access token
-      description: |-
-        Revoke a user access token and delete any sessions using the token.
-
-        __Minimum server version__: 4.1
-
-        ##### Permissions
-        Must have `revoke_user_access_token` permission. For non-self requests, must also have the `edit_other_users` permission.
-      operationId: revoke-a-user-access-token-and-delete-any-sessions-using-the-token-minimum-server-version--41-permis
-      x-api-path-slug: userstokensrevoke-post
-      parameters:
-      - in: body
-        name: token
-        schema:
-          $ref: '#/definitions/holder'
-      responses:
-        200:
-          description: OK
-      tags:
-      - Revoke
-      - User
-      - Access
-      - Token
+x-streamrank:
+  polling_total_time_average: 0
+  polling_size_download_average: 0
+  streaming_total_time_average: 0
+  streaming_size_download_average: 0
+  change_yes: 0
+  change_no: 0
+  time_percentage: 0
+  size_percentage: 0
+  change_percentage: 0
+  last_run: ""
+  days_run: 0
+  minute_run: 0
+---

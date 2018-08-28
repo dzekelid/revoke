@@ -11,11 +11,39 @@ image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/l
 x-kinRank: "10"
 x-alexaRank: "0"
 tags: Revoke
-created: "2018-08-26"
-modified: "2018-08-26"
+created: "2018-08-28"
+modified: "2018-08-28"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/revoke/master/_listings/aws-redshift/apis.md
 specificationVersion: "0.14"
-apis: []
+apis:
+- name: AWS Redshift API - Revoke Cluster Security Group Ingress
+  x-api-slug: actionrevokeclustersecuritygroupingress-get
+  description: |-
+    Revokes an ingress rule in an Amazon Redshift security group for a previously authorized
+                IP range or Amazon EC2 security group.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Database_AmazonRedshift.png
+  humanURL: https://aws.amazon.com/redshift/
+  baseURL: :///
+  tags: Amazon Web Services, Data, Data Warehouse, Stack Network, API Service Provider,
+    API Service Provider, API Provider, Databases, Profiles, Relative Data, Service
+    API
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/revoke/master/_listings/aws-redshift/actionrevokeclustersecuritygroupingress-get-openapi.md
+- name: AWS Redshift API - Revoke Snapshot Access
+  x-api-slug: actionrevokesnapshotaccess-get
+  description: |-
+    Removes the ability of the specified AWS customer account to restore the specified
+                snapshot.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Database_AmazonRedshift.png
+  humanURL: https://aws.amazon.com/redshift/
+  baseURL: :///
+  tags: Amazon Web Services, Data, Data Warehouse, Stack Network, API Service Provider,
+    API Service Provider, API Provider, Databases, Profiles, Relative Data, Service
+    API
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/revoke/master/_listings/aws-redshift/actionrevokesnapshotaccess-get-openapi.md
 x-common:
 - type: x-api-gallery
   url: http://aws.rds.api.gallery.streamdata.io
